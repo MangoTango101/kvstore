@@ -1,0 +1,17 @@
+cd ~
+mkdir -p Projects
+cd Projects
+mkdir kvstore
+cd kvstore
+git init
+mkdir src include tests benchmarks
+nano .gitignore
+nano src/main.c
+nano Makefile
+make
+./kvstore
+git add .
+git commit -m "Bootstrap kvstore project skeleton"
+git branch -M main
+git remote add origin https://github.com/MangoTango101/kvstore.git
+git push -u origin main
